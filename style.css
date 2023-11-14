@@ -1,0 +1,186 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+#itens {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+
+#botoes {
+    display: flex;
+    align-items: center;
+}
+#itens li {
+    margin: 30px;
+    list-style: none;
+    color: black;
+    
+}
+#itens li:hover {
+    color: #FF7038;
+} 
+li:hover {
+    color: #FF7038;
+}
+
+button {
+    border-radius: 2px;
+    color: #092533;
+   height: 30px;
+   width: 100px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+}
+#btnlogin{
+    margin: 15px;
+    background-color: #092533;
+    color: whitesmoke;
+    border: none;
+    
+}
+#btncadastro{
+margin-right: 25px;
+border: 2px solid #092533;
+}
+#logo{
+    width: auto;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./assets/Rectangle 181.png');
+}
+
+#hero h1, #hero  {
+    align-self: flex-start;
+    color: #092533;
+
+}
+#hero h1{
+    margin: 0px;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size:  75px;
+    margin-bottom: 30px;
+    
+    
+}
+#btnsaiba{
+    
+    align-self: flex-start;
+    margin-left: 350px;
+    border-radius: 2px;
+    background-color: #092533;
+    color: whitesmoke;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#hero #mulher {
+    align-self: flex-end;
+    width: auto;
+    height: 500px;
+}
+
+#display h2{
+    margin-left: 400px;
+}
+#display img{
+    margin-left: 10px;
+    width: 320px;   
+    height: 300px;
+}
+#frase {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+}
+#dockter {
+    
+    margin-right: 20px;
+    width: auto;
+    height: 700px;
+}
+#frase h1{ 
+    
+    font-size: 50px    ;
+}
+#busc h2{
+ margin-left: 500px;
+ font-size: 40px;
+}
+#imgaa{
+    margin-left: 40px;
+}
+#dadosubs h1, h2{
+    margin-left: 550px;
+}
+#dados{
+
+
+width: 100%;
+
+
+
+}
+#contato li {
+    display: flex;
+    align-items: center;
+}
+#contato span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+#contato img {
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+#rodape {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-image: url('/assets/Rectangle 170.png');
+    padding: 20px;
+
+    
+}
+
+#naveg, #contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+#listas {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#final {
+     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
