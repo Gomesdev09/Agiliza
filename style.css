@@ -143,6 +143,7 @@ width: 100%;
 #contato li {
     display: flex;
     align-items: center;
+    list-style: none;
 }
 #contato span {
     display: flex;
