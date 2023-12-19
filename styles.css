@@ -1,0 +1,93 @@
+:root{
+    --brancoCada: #F5FFFE;
+    --preto: #000000;
+    --azul-principal: #092533;
+    --laranja:#FF7038;
+    --ticiano1: #F5FEFF;
+    --ticiano2: #DBECF5;
+    --header: #F5FFFE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+ /* header */
+nav{
+    display: flex;
+    color: var(--preto);
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header);
+    padding-left: 25px;
+    padding-right: 25px;
+    min-width: 100%;
+    position: fixed;
+}
+
+.navlinks{
+    list-style: none;
+    display: flex;
+}
+
+.navlinks>li{
+    transition: all 1s;
+}
+
+.navlinks>li>a{
+    color: var(--preto);
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navlinks>li>a:hover{
+    color: var(--laranja);
+}
+
+.btlogin{
+    background-color: var(--azul-principal);
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    padding: 10px 40px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.btlogin:hover{
+    background-color: #092533ef;
+    border-color:#092533;
+    color: #f0faff;
+    transition: 1s background;
+    transition: all 0.5s;
+}
+
+.btcadastro{
+    background-color: var(--brancoCada);
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border-color:#092533;
+    color: var(--azul-principal);
+}
+
+.btcadastro:hover{
+    background-color: #d6f0eef5;
+    color: var(--azul-principal);    
+    transition: 1s background;
+    transition: all 0.5s;
+}
+
+

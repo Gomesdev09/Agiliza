@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="CadastroLoginCSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="login-section">
+        <h2 style="font-size: 38px;">Login</h2>
+
+        <p style="font-size: 18px; color: #949494;"> Que bom te ver novamente</p>
+        
+        <form id="loginForm">
+            <div class="input-container">
+                <label for="Cpf"></label>
+                <input type="text" id="cpf" placeholder="Digite seu CPF" name="cpf" required>
+            </div>
+
+            <div class="input-container">
+                <label for="senha"></label>
+                <input type="password" id="senha" placeholder="Senha" name="senha" required>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div id="register-link">
+                <p>Não tem cadastro? <a href="/cadastro">Cadastre-se</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="image-section">
+        <img src="img/Rectangle.png" alt="Imagem de exemplo">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginForm = document.getElementById('loginForm');
+
+            loginForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const cpf = document.getElementById('cpf').value;
+                const senha = document.getElementById('senha').value;
+
+                const data = {
+                    CPF: cpf,
+                    Senha: senha
+                };
+
+                fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Login failed');
+                    }
+                    return response.text();
+                })
+                .then(message => {
+                    console.log('Success:', message);
+                    alert('Login successful');
+                    window.location.href = "/pagina-logada"; // Redirecionar para a página desejada
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Login failed');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

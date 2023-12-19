@@ -1,13 +1,27 @@
+
 header {
     display: flex;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
 }
-
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+h1 {
+  font-size: 65px;
+ 
+  
+}
 #itens {
     display: flex;
     align-items: center;
     font-size: larger;
+    
+}
+#itens {
+
+    align-content: center;
 }
 
 #botoes {
@@ -26,8 +40,12 @@ header {
 li:hover {
     color: #FF7038;
 }
+button{
+    font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+}
 
-button {
+header button{
     border-radius: 2px;
     color: #092533;
    height: 30px;
@@ -54,136 +72,233 @@ border: 2px solid #092533;
 a {
     text-decoration: none;
 }
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
+ 
 #hero {
-    display: flex;
+  display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-image: url('./assets/Rectangle 181.png');
+    background-color: #F0FBFC;
+    
 }
 
-#hero h1, #hero  {
-    align-self: flex-start;
+#hero img{
+    height: auto;   
+    width: 48vw;
+    margin-top: -50px;
+}
+#hero h1 {
+    margin-left: 90px;
+    margin-top: 70px;
     color: #092533;
-
 }
-#hero h1{
-    margin: 0px;
-    margin-left: 100px;
-    font-weight: bold;
-    font-size:  75px;
-    margin-bottom: 30px;
-    
-    
-}
-#btnsaiba{
-    
-    align-self: flex-start;
-    margin-left: 350px;
-    border-radius: 2px;
+#hero button{
+    border-radius: 5px;
+    color: antiquewhite;
     background-color: #092533;
-    color: whitesmoke;
+    width: 11vw;
+    height: 4vw;
+    margin-left: 90px;
     border: none;
-    width: 150px;
-    height: 50px;
     font-size: 20px;
 }
 
-#hero #mulher {
-    align-self: flex-end;
-    width: auto;
-    height: 500px;
-}
-
-#display h2{
-    margin-left: 400px;
-}
-#display img{
-    margin-left: 10px;
-    width: 320px;   
-    height: 300px;
-}
-#frase {
+#consul h1, h2{
     display: flex;
-    align-items: center; /* Alinha verticalmente */
+    text-align: center;
+    justify-content: center;
 }
-#dockter {
+#consul h1{
+    color: #092533;
     
-    margin-right: 20px;
-    width: auto;
-    height: 700px;
 }
-#frase h1{ 
+#consul h2{
+    color: #677878;
+    margin-top: -40px;
+    font-size: 28px;
+    font-weight: 500;
+}
+#consul button{
     
-    font-size: 50px    ;
+    width: 27vw;
+    height: 6vw;
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 600px;
+    
+    
 }
-#busc h2{
- margin-left: 500px;
- font-size: 40px;
-}
-#imgaa{
-    margin-left: 70px;
-    width: 1300px;
-}
-#dadosubs h1, h2{
-    margin-left: 450px;
-}
-
-#dados{
-
-
-width: 100%;
-
-
-
-}
-#contato li {
+#btnsconsul {
     display: flex;
-    align-items: center;
-    list-style: none;
-}
-#contato span {
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  #btnmarc1, #btnmarc2 {
+    font-weight: 600;
+    margin: 0 100px;
+  }
+  #btnmarc1{
+    background-color: white;
+  }
+  #btnmarc2{
+    background-color: #FF7038;
+    color: white;
+    border: none;
+  }
+  #txtmarc{
     display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 25px;
+    color: #484848;
+    margin-top: 50px;
+  }
+  #consul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+    height: 100vh;
+  }
+  #vetorseta{
+    margin-top: 15px;
+  }
+
+  #allinf{
+    background-color: #F0FBFC;
+  border-radius: 0px 0px 220px 220px;
+  }
+  #allinf {
+    background-color: #F0FBFC;
+    border-radius: 0px 0px 220px 220px;
+    width: 100%; /* 100% da largura do contêiner pai */
+    height: 700px; /* Ajuste a altura conforme necessário */
+    
 }
-#contato img {
-    margin-right: 10px; /* Ajuste o valor conforme necessário */
+  #allinf {
+    text-align: center;
 }
+  #infofun {
+    margin-top: 100px;
+    display: flex;
+  
+  flex-direction:row;
+  justify-content: space-around; 
+
+  }
+  #infotext {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  }
+  
+  #infotext img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+#iconelocalizacao{
+  display: flex;
+  align-items: center;
+  
+}
+#localizacao{
+  flex-direction: column;
+}
+#iconelocalizacao img {
+  margin-right: 10px;
+}
+
+#iconecoracao{
+  display: flex;
+  align-items: center;
+  
+}
+#medico{
+  flex-direction: column;
+}
+#iconecoracao img {
+  margin-right: 10px;
+}
+
+
+
+#check {
+  display: flex;
+  align-items: center;
+}
+#check img {
+  margin-right: 10px;
+}
+#parceiros h1{
+  color: #092533;
+  text-align: center;
+  font-size: 60px;
+}
+#parceiros img{
+  height: auto;
+  width: 1345px;
+}
+#conhece {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+#tst{
+  flex-direction: row;
+}
+
+
 
 #rodape {
-   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    background-image: url('/Agiliza/assets/Rectangle\ 170.png');
-    padding: 20px;
-
-    
+  margin-top: 380px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: #092533;
+  padding: 20px;
 }
 
-#naveg, #contato {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
+#naveg, #contato, #rede {
+  padding: 10px;
+  margin: 0 10px; 
 }
 
-
-#listas {
-    
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+#rodape img {
+  max-width: 100%;
+  height: auto;
 }
 
-#final {
-     flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+#rodape a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+#rodape h3{
+  color: #F0FBFC;
+}
+#rodape li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+ 
+#barra{
+  width: 4vh;
+}
+#btn-marq{
+  margin-top: 100px;
 }

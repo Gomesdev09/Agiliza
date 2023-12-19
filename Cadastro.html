@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="CadastroLoginCSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="login-section">
+        <h2 style="font-size: 38px;">Cadastro</h2>
+
+        <p style="font-size: 18px; color: #949494;"> É um prazer ter você aqui.</p>
+        
+        <form id="seuFormId" action="/Login.html">
+            <div class="input-container">
+                <label for="Nome"></label>
+                <input type="text" id="Nome" placeholder="Digite seu Nome" name="Nome" required>
+            </div>
+
+            <div class="input-container">
+                <label for="Senha"></label>
+                <input type="password" id="Senha" placeholder="Senha" name="Senha" required>
+            </div>
+
+            <div class="input-container">
+                <label for="CPF"></label>
+                <input type="text" id="CPF" placeholder="Digite seu CPF" name="CPF" required>
+            </div>
+
+            <div class="input-container">
+                <label for="SUS"></label>
+                <input type="text" id="SUS" placeholder="Informe sua carteirinha do SUS" name="SUS" required>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div id="register-link">
+                <p>Não tem cadastro? <a href="/cadastro">Cadastre-se</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="image-section">
+        <img src="img/Rectangle 174.png" alt="Imagem de exemplo">
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('seuFormId'); // Substitua 'seuFormId' pelo ID do seu formulário
+            const url = 'http://localhost:4040/Cadastro/cadastrar'; // Substitua pela URL correta
+            
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                console.log('Formulário enviado!');
+
+                const nome = document.getElementById('Nome').value;
+                const Senha = document.getElementById('Senha').value;
+                const CPF = document.getElementById('CPF').value;
+                const SUS = document.getElementById('SUS').value;
+
+                const data = {
+                    nome: nome,
+                    Senha: Senha,
+                    CPF: CPF,
+                    SUS: SUS
+                };
+
+                fetch(url, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+})
+.then(response => response.json())
+.then(data => {
+    console.log('Success:', data);
+    // Aqui você pode manipular a resposta do servidor, por exemplo, exibindo uma mensagem de sucesso
+})
+.catch(error => {
+    console.error('Error:', error);
+    // Aqui você pode manipular o erro, por exemplo, exibindo uma mensagem de erro
+})
+.finally(() => {
+    // Redirecionar para outra página após o cadastro (substitua 'Login.html' pela URL desejada)
+    window.location.replace('Login.html');
+});
+});
+                
+            });
+      
+        
+        
+    </script>
+
+</body>
+</html>

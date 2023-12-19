@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <script src="main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Agiliza</title>
     <header>
         <img src="./assets/Frame 31.png" alt="logo" id="logo">
         <div id="itens">
@@ -19,43 +21,93 @@
     </div>
     <div id="botoes">
         <button id="btnlogin">Login</button>
-        <button id="btncadastro">Cadastre-se</button>
+        <button id="btncadastro">Cadastro</button>
     </div>
     </header>
 </head>
-    <body>
-        <div id="hero">
-            <div id="ll">
-        <h1>Aqui agilizamos a rotina da sua saúde</h1>
-        <button id="btnsaiba">saiba-mais</button>
+    <body>   
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+    <div id="hero">
+        <div id="herodireito">
+            <h1>Aqui <span style="color: #FE81">Agilizamos</span> <br> a rotina da sua saúde</h1>
+            <button id="btnsaiba">saiba-mais</button>
+        </div>
+        <div id="mulher">
+            <img src="./assets/Frame 33.png" alt="mulher" id="mulher">
+        </div>
     </div>
-        <img src="./assets/Frame 33.png" alt="mulher" id="mulher">
+    <div id="consul">
+        <h1>Encontre a UBS mais próxima e <br>
+             marque a sua consulta!
+        </h1>
+
+        <h2>Encontre a UBS mais próxima e com a menor<br>
+             lotação para marcar a sua consulta, tudo<br>
+              isso em menos de 1 minuto.
+        </h2>
+        <div id="btnsconsul">
+        <button id="btnmarc1">Consultas marcadas</button>
+        <button id="btnmarc2">Marcar sua consulta</button>
+        </div>
+        <a id="txtmarc">Entenda como marcar</a>
+        <img  id="vetorseta" src="./assets/VectorSeta.png">
     </div>
-<div id="display">
-    <p><h2>Cuide da sua saúde e descubra nossos serviços</h2></p>
-<img src="./assets/consultas.png" alt="consultas" id="consultas">
-<img src="./assets/localiza.png" alt="localiza" id="localiza">
-<img src="./assets/medicamentos.png" alt="medica" id="medica">
-<img src="./assets/vacinacao.png" alt="vacinacao" id="vacinacao">
-</div>
-<div id="frase"> 
-    <img src="./assets/dokter.png" alt="dokter" id="dockter">
-    <h1> Viva rápido, viva aqui!</h1>
-</div>
-<div id="busc">
-    <h2><p>O que buscamos</p></h2>
-    <img src="/Agiliza/assets/Frame 34 (1).png" alt="img" id="imgaa">
-</div>
-<div id="dadosubs">
-    <h1>Problemas encontrados UBS</h1>
     
-    <img src="./assets/Group 59.png" alt="dados"    id="dados">
+<div id="allinf">
+<div id="infofun">
+        <h1 id="infotext">Como<br> funciona a<br> <span style="color: #FE8150;">localização e o<br> agendamento<br></span> de consulta?</h1>
+        <img id="barra" src="./assets/Linha.png" alt="barra">
+        
+    <div id="explc">
+        <div id="iconelocalizacao">
+        <img src="./assets/iconlocalizacao.png" alt="">
+        <div id="localizacao">
+            <h3>Utilize a pesquisa de localização para encontrar a<br> UBS mais próxima.</h3>
+            <a>Nós ainda não agendamos pronto atendimento.</a>
+        </div>
+    </div>
+    <div id="iconecoracao">
+        <img src="./assets/iconcoracao.png" alt="">
+        <div id="medico">
+            <h3>Selecione a lotação, especialidade médica e data<br> para o atendimento.</h3>
+            <a>Caso a UBS não tenha os requisitos selecionados,<br> iremos te mostrar a que mais se aproxima do que foi<br> selecionado.</a>
+        </div>
+    </div>
+        <div id="check">
+            <img src="./assets/iconcheck.png" alt="">
+            <h3>Pronto! Sua consulta está agendada. Aqui no<br> Agiliza, a sua consulta é rápida e sem fila.</h3>
+        </div>
+        
+    </div>
     
+        
+    </div>
+    <Button id="btn-marq">marque sua consulta</Button>
 </div>
+    <div id="parceiros">
+        <h1>Compre seu remédio com desconto em nossas farmácias parceiras.</h1>
+        <img src="./assets/parceiros.png">
+    </div>
+    <div id="conhece">
+        <h1>Quem conhece, recomenda!</h1>
+        <img src="./assets/recomendacao.png" alt="">
+    </div>
+</div>
+
+
 </body>
 <footer id="rodape">
     
-    <img src="/Agiliza/assets/Logo VS.png" alt="logovs" id="logovs">
+    
     <div id="naveg">
         <h3>Navegação</h3>
         <a><li><p>Ínicio</p></li></a>
@@ -65,11 +117,19 @@
     </div>
     <div id="contato"> 
         <h3>Contato</h3> 
-        <span><img src="/Agiliza/assets/Envelope.png" alt="evlop" id="evelop"><a><li><p>suporteagiliza@gmail.com</p></li></a></span>
-    <span><img src="/Agiliza/assets/Instagram.png" alt="insta" id="insta"><a><li><p>@agiliza</p></li></a></span>
-    <span><img src="/Agiliza/assets/Whatsapp.png" alt="whats" id="whats"><a><li><p>(021) 98888-8888</p></li></a></span>
+        <span><a><li><p>suporteagiliza@gmail.com</p></li></a></span>
+    <span><a><li><p>@agiliza</p></li></a></span>
+    <span><a><li><p>(021)98888-8888</p></li></a></span>
+    </div>
+    <div id="rede">
+        <h3>Redes sociais</h3>
+        <div id="icons">
+        <img src="./assets/InstagramIC.png" alt="logovs" id="logovs">
+        <img src="./assets/VectorIC.png" alt="">
+        <img src="./assets/VectorrIC.png" alt="">
 
     </div>
+</div>
 
     
     </div>
